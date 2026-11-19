@@ -11,14 +11,14 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wallbox não liga ou não carrega? O que verificar · Eletronicar</title>
-<meta name="description" content="Wallbox parou de funcionar? Veja 6 verificações rápidas antes de trocar o carregador: botão de emergência, disjuntor, aterramento, carro e cartão RFID. Conserto em bancada em São João da Boa Vista – SP.">
+<title>Wallbox não carrega? Luzes e falhas BYD e WEG | Eletronicar</title>
+<meta name="description" content="Entenda luzes e falhas de wallbox BYD e WEG com base nos manuais. Confira o modelo, faça verificações externas e saiba quando procurar avaliação.">
 <link rel="canonical" href="https://eletronicar.com.br/wallbox-nao-liga/">
-<meta property="og:title" content="Wallbox não liga? 6 verificações antes de trocar">
+<meta property="og:title" content="Wallbox não carrega? Entenda luzes e falhas por modelo">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#0b1f2a">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O botão vermelho de emergência está acionado?","acceptedAnswer":{"@type":"Answer","text":"Muitos wallbox (como os da BYD) têm um botão vermelho de parada de emergência. Se ele foi pressionado, o carregador fica bloqueado. Gire o botão no sentido da seta até ele subir e aguarde o aparelho reiniciar."}},{"@type":"Question","name":"O disjuntor do wallbox desarmou?","acceptedAnswer":{"@type":"Answer","text":"Confira no quadro de energia o disjuntor e o DR (diferencial residual) do circuito do carregador. Se estiverem desligados, religue uma vez. Se desarmarem de novo, não insista: pode haver fuga de corrente ou curto, e é hora de chamar um eletricista ou o técnico."}},{"@type":"Question","name":"A tensão e o aterramento estão corretos?","acceptedAnswer":{"@type":"Answer","text":"Wallbox AC precisa de tensão estável e aterramento ligado. Falta de terra, tensão baixa ou neutro solto fazem o carregador acusar erro e recusar a carga. Um eletricista confere isso no quadro com o multímetro."}},{"@type":"Question","name":"O carro está liberando a carga?","acceptedAnswer":{"@type":"Answer","text":"Verifique no painel ou no aplicativo do carro se há carga agendada, limite de carga atingido ou trava do conector. Teste também o plugue: encaixe até o fim e veja se a tampa da tomada do carro está limpa e seca."}},{"@type":"Question","name":"Desligou o wallbox da forma certa?","acceptedAnswer":{"@type":"Answer","text":"Cortar a energia no meio de uma carga pode deixar o carregador em estado de erro. Desligue o disjuntor por 1 minuto e religue para reiniciar. Se a luz de erro voltar, o defeito provavelmente está na placa."}},{"@type":"Question","name":"Perdeu o cartão de carregamento?","acceptedAnswer":{"@type":"Answer","text":"Em alguns modelos a recarga só começa com o cartão RFID. Sem ele, o wallbox não carrega mesmo estando bom. Fazemos o desbloqueio de carregamento (desativação da exigência do cartão) em modelos compatíveis."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Luz vermelha significa placa queimada?","acceptedAnswer":{"@type":"Answer","text":"Não. É uma sinalização que precisa ser interpretada pelo manual do modelo. O diagnóstico deve distinguir instalação elétrica, comunicação com o veículo, cabo e defeito interno antes de indicar uma peça."}},{"@type":"Question","name":"O wallbox ligado pode estar esperando o cartão?","acceptedAnswer":{"@type":"Answer","text":"Se o equipamento estiver configurado para autenticação, a autorização faz parte do início da recarga. Confira essa configuração no manual do seu modelo. A ausência de carga, isoladamente, não comprova defeito."}},{"@type":"Question","name":"Posso reiniciar qualquer wallbox desligando o disjuntor?","acceptedAnswer":{"@type":"Answer","text":"Não use um procedimento genérico. Consulte o manual do aparelho e encerre a carga pelo método previsto antes de qualquer reinício. Se a proteção desarma ou há sinais de dano, interrompa o uso e procure avaliação."}},{"@type":"Question","name":"O que conferir no carro sem abrir o carregador?","acceptedAnswer":{"@type":"Answer","text":"Consulte no painel ou aplicativo do veículo o estado da carga, os avisos e eventual programação de horário. Observe se o conector está corretamente encaixado, sem forçar ou tocar nos contatos. Siga o manual do veículo."}},{"@type":"Question","name":"Quais informações enviar para avaliação?","acceptedAnswer":{"@type":"Answer","text":"Envie o modelo do wallbox, o modelo do veículo, a descrição do sintoma e um vídeo das luzes. Informe se o problema começou após instalação, queda de energia ou mudança de configuração. Evite publicar endereço, placa do carro e número de série em comentários públicos."}}]}</script>
 <style>
 :root{--bg:#ffffff;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--soft:#f1f5f9;--dark:#0b1f2a;--dark2:#12303f;--green:#16a34a;--green-d:#15803d;--accent:#22c55e}
 *{box-sizing:border-box}
@@ -92,7 +92,7 @@ footer p{margin:0;max-width:620px}
  .charger{display:none}.grid3,.steps{grid-template-columns:1fr}.nav a:not(.btn){display:none}
  section{padding:56px 0}.cta{padding:40px 22px}
 }
-</style>
+.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:#fff}table{width:100%;border-collapse:collapse;min-width:300px;text-align:left}caption{text-align:left;padding:16px;font-weight:700}th,td{padding:14px 16px;border-top:1px solid var(--line);vertical-align:top}th{background:var(--dark);color:#fff}.source{font-size:.9rem;color:var(--muted)}.source a{text-decoration:underline}main nav a{display:inline-block;margin:4px 8px 4px 0;text-underline-offset:3px}.hero time{white-space:nowrap}</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -107,32 +107,73 @@ footer p{margin:0;max-width:620px}
  <nav class="nav"><a href="/">Início</a><a class="btn sm wa-link" href="https://wa.me/5519983419373?text=Ol%C3%A1%2C%20fiz%20as%20verifica%C3%A7%C3%B5es%20e%20meu%20wallbox%20continua%20sem%20carregar.">WhatsApp</a></nav>
 </div></header>
 
-<section class="hero"><div class="wrap" style="grid-template-columns:1fr">
- <div>
-  <span class="tag">Guia rápido · wallbox AC</span>
-  <h1>Wallbox não liga ou <span>não carrega</span>? Verifique isto antes de trocar</h1>
-  <p class="lead">Nem todo wallbox parado está estragado. Faça estas verificações simples, sem abrir o aparelho. Se o problema continuar, o defeito costuma estar na placa eletrônica, e isso tem conserto.</p>
- </div>
+<main>
+<section class="hero"><div class="wrap" style="grid-template-columns:1fr"><div>
+ <span class="tag">Guia de operação · wallbox AC</span>
+ <h1>Wallbox não liga ou <span>não carrega</span>? Entenda os sinais por modelo</h1>
+ <p class="lead">Um carregador que não inicia a recarga pode estar aguardando autorização, ter concluído a carga ou sinalizar uma proteção. Identifique o modelo antes de interpretar a luz: a mesma cor pode significar coisas diferentes.</p>
+ <p>Por Eletronicar · Atualizado em <time datetime="2026-11-19">19/11/2026</time></p>
+</div></div></section>
+
+<section><div class="wrap">
+ <h2>Comece pela etiqueta e pelo sintoma</h2>
+ <p>Fotografe a etiqueta para identificar fabricante e modelo. Grave cerca de 15 segundos do indicador, mostrando a cor, o ritmo das piscadas e se o carro está conectado. Anote também quando o problema começou. Esse registro ajuda a escolher o manual correto e orientar a avaliação.</p>
+ <p><strong>Não abra o wallbox, não toque nos contatos nem faça medições na rede.</strong> Se houver cheiro de queimado, dano no cabo, água no equipamento ou desarme repetido da proteção, interrompa o uso e procure um profissional. Não faça pontes nem desative proteções.</p>
+ <nav aria-label="Conteúdo do guia"><a href="#byd">Luzes BYD</a> · <a href="#weg">Luzes WEG</a> · <a href="#duvidas">Dúvidas frequentes</a> · <a href="#avaliacao">Solicitar avaliação</a></nav>
 </div></section>
 
-<section><div class="wrap faq">
- <h2>6 verificações rápidas</h2>
- <p class="sub">Atenção: não abra o carregador nem mexa em fios energizados. As verificações abaixo são externas e seguras.</p>
- <details><summary>O botão vermelho de emergência está acionado?</summary><p>Muitos wallbox (como os da BYD) têm um botão vermelho de parada de emergência. Se ele foi pressionado, o carregador fica bloqueado. Gire o botão no sentido da seta até ele subir e aguarde o aparelho reiniciar.</p></details>
- <details><summary>O disjuntor do wallbox desarmou?</summary><p>Confira no quadro de energia o disjuntor e o DR (diferencial residual) do circuito do carregador. Se estiverem desligados, religue uma vez. Se desarmarem de novo, não insista: pode haver fuga de corrente ou curto, e é hora de chamar um eletricista ou o técnico.</p></details>
- <details><summary>A tensão e o aterramento estão corretos?</summary><p>Wallbox AC precisa de tensão estável e aterramento ligado. Falta de terra, tensão baixa ou neutro solto fazem o carregador acusar erro e recusar a carga. Um eletricista confere isso no quadro com o multímetro.</p></details>
- <details><summary>O carro está liberando a carga?</summary><p>Verifique no painel ou no aplicativo do carro se há carga agendada, limite de carga atingido ou trava do conector. Teste também o plugue: encaixe até o fim e veja se a tampa da tomada do carro está limpa e seca.</p></details>
- <details><summary>Desligou o wallbox da forma certa?</summary><p>Cortar a energia no meio de uma carga pode deixar o carregador em estado de erro. Desligue o disjuntor por 1 minuto e religue para reiniciar. Se a luz de erro voltar, o defeito provavelmente está na placa.</p></details>
- <details><summary>Perdeu o cartão de carregamento?</summary><p>Em alguns modelos a recarga só começa com o cartão RFID. Sem ele, o wallbox não carrega mesmo estando bom. Fazemos o desbloqueio de carregamento (desativação da exigência do cartão) em modelos compatíveis.</p></details>
+<section class="alt" id="byd"><div class="wrap">
+ <h2>Wallbox BYD: o que significam as piscadas?</h2>
+ <p>Referência: famílias <strong>EVA03K5I/XST0, EVA007KI/XST0 e EVA011KI/XST0</strong> do manual consultado. Confira a etiqueta; esta tabela não deve ser aplicada automaticamente a carregadores Zhida, Duosida ou outros modelos fornecidos com veículos BYD.</p>
+ <div class="table-scroll" role="region" aria-label="Sinalização dos modelos BYD indicados" tabindex="0"><table>
+ <caption>Resumo de estados de operação e proteção</caption>
+ <thead><tr><th scope="col">Sinal observado</th><th scope="col">Interpretação no manual</th></tr></thead><tbody>
+ <tr><td>Amarelo, 1 piscada por segundo</td><td>Preparação para iniciar a carga.</td></tr>
+ <tr><td>Verde, 3 piscadas por segundo</td><td>Recarga em andamento.</td></tr>
+ <tr><td>Verde, 1 piscada a cada 2 segundos</td><td>Carga completa.</td></tr>
+ <tr><td>Vermelho, 1 piscada por segundo</td><td>Proteção por temperatura elevada.</td></tr>
+ <tr><td>Vermelho, 1 piscada a cada 3 segundos</td><td>Proteção por excesso de corrente.</td></tr>
+ <tr><td>Vermelho, 3 piscadas por segundo</td><td>Proteção por fuga de corrente.</td></tr>
+ <tr><td>Vermelho fixo</td><td>Anormalidade no sinal CP, de controle da recarga.</td></tr>
+ <tr><td>Vermelho/amarelo alternados, a cada 3 segundos</td><td>Indicação de terra desconectado.</td></tr>
+ <tr><td>Vermelho/amarelo alternados, a cada segundo</td><td>Parada de emergência acionada.</td></tr>
+ </tbody></table></div>
+ <p class="source">Fonte: <a href="https://bydenergia.com/wp-content/uploads/2026/08/Manual_Carregador_Wallbox_BYD.pdf#page=20">BYD Energia · Manual de Instruções do Carregador Wallbox BYD</a>, pp. impressas 19–20 (PDF 20–21), tabela de indicadores. Versão disponível na central oficial consultada em 19/11/2026; o documento não apresenta revisão claramente identificada.</p>
+ <p>O indicador aponta um estado, não identifica sozinho o componente defeituoso. Registre o padrão e solicite avaliação se o sinal de proteção persistir.</p>
 </div></section>
 
-<section class="alt"><div class="wrap">
- <div class="cta">
-  <h2>Fez tudo e continua parado?</h2>
-  <p>Fazemos o diagnóstico em bancada e o reparo da placa do seu wallbox, sem precisar comprar outro. Envie a foto da etiqueta e o defeito pelo WhatsApp.</p>
-  <a class="btn wa-link" href="https://wa.me/5519983419373?text=Ol%C3%A1%2C%20fiz%20as%20verifica%C3%A7%C3%B5es%20e%20meu%20wallbox%20continua%20sem%20carregar."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a>
- </div>
+<section id="weg"><div class="wrap">
+ <h2>WEG WEMOB WALL: amarelo nem sempre é defeito</h2>
+ <p>Referência: <strong>WEMOB WALL 32 A, modelos 1T1, 1T2, 1GBT e 1NAC</strong> abrangidos pelo guia 10013034976. Outras linhas WEMOB podem usar sinalizações diferentes.</p>
+ <div class="table-scroll" role="region" aria-label="Sinalização WEG WEMOB WALL" tabindex="0"><table>
+ <caption>Estados descritos na seção 6.1 do guia WEG</caption>
+ <thead><tr><th scope="col">Sinal observado</th><th scope="col">Interpretação no guia</th></tr></thead><tbody>
+ <tr><td>Verde fixo</td><td>Equipamento disponível.</td></tr>
+ <tr><td>Verde piscando</td><td>Usuário autorizado, quando há autenticação.</td></tr>
+ <tr><td>Amarelo fixo</td><td>Veículo conectado, em reconhecimento.</td></tr>
+ <tr><td>Amarelo piscando</td><td>Recarga concluída ou suspensa.</td></tr>
+ <tr><td>Azul fixo</td><td>Recarga em curso.</td></tr>
+ <tr><td>Vermelho fixo ou piscando</td><td>Falha ou erro; consultar a orientação do modelo.</td></tr>
+ </tbody></table></div>
+ <p>Para retirar o conector, encerre a recarga pelo veículo e aguarde sua liberação. Não puxe o cabo nem force o encaixe.</p>
+ <p class="source">Fonte: <a href="https://static.weg.net/medias/downloadcenter/hbf/h6b/WEG_WEMOB_10013034976_wall-instalation-guide-internet.pdf#page=6">WEG · Guia Rápido de Instalação WEMOB WALL, documento 10013034976</a>, página PDF 6, §§6.1–6.3. Edição disponível em 19/11/2026; confira a documentação entregue com o aparelho.</p>
 </div></section>
+
+<section class="alt" id="duvidas"><div class="wrap faq">
+ <h2>Dúvidas antes de pedir o conserto</h2>
+ <details><summary>Luz vermelha significa placa queimada?</summary><p>Não. É uma sinalização que precisa ser interpretada pelo manual do modelo. O diagnóstico deve distinguir instalação elétrica, comunicação com o veículo, cabo e defeito interno antes de indicar uma peça.</p></details>
+ <details><summary>O wallbox ligado pode estar esperando o cartão?</summary><p>Se o equipamento estiver configurado para autenticação, a autorização faz parte do início da recarga. Confira essa configuração no manual do seu modelo. A ausência de carga, isoladamente, não comprova defeito.</p></details>
+ <details><summary>Posso reiniciar qualquer wallbox desligando o disjuntor?</summary><p>Não use um procedimento genérico. Consulte o manual do aparelho e encerre a carga pelo método previsto antes de qualquer reinício. Se a proteção desarma ou há sinais de dano, interrompa o uso e procure avaliação.</p></details>
+ <details><summary>O que conferir no carro sem abrir o carregador?</summary><p>Consulte no painel ou aplicativo do veículo o estado da carga, os avisos e eventual programação de horário. Observe se o conector está corretamente encaixado, sem forçar ou tocar nos contatos. Siga o manual do veículo.</p></details>
+ <details><summary>Quais informações enviar para avaliação?</summary><p>Envie o modelo do wallbox, o modelo do veículo, a descrição do sintoma e um vídeo das luzes. Informe se o problema começou após instalação, queda de energia ou mudança de configuração. Evite publicar endereço, placa do carro e número de série em comentários públicos.</p></details>
+</div></section>
+
+<section id="avaliacao"><div class="wrap"><div class="cta">
+ <h2>Precisa avaliar o seu wallbox?</h2>
+ <p>A Eletronicar atende na loja em São João da Boa Vista, SP. Avaliamos o equipamento e apresentamos o orçamento antes do reparo. A necessidade e a viabilidade do conserto dependem do diagnóstico.</p>
+ <a class="btn wa-link" href="https://wa.me/5519983419373?text=Ol%C3%A1%2C%20quero%20avaliar%20meu%20wallbox.%20Vou%20enviar%20o%20modelo%20e%20o%20sintoma."><svg><use href="#wa"/></svg>Enviar modelo e sintoma</a>
+</div></div></section>
+</main>
 
 <footer><div class="wrap">
  <p><b style="color:#fff">Eletronicar</b> · CNPJ 32.215.005/0001-28 · Rua João Pessoa, 557 – Vila Oriental, São João da Boa Vista – SP</p>
