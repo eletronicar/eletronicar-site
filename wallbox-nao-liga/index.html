@@ -11,10 +11,10 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wallbox não carrega? Luzes e falhas BYD e WEG | Eletronicar</title>
-<meta name="description" content="Entenda luzes e falhas de wallbox BYD e WEG com base nos manuais. Confira o modelo, faça verificações externas e saiba quando procurar avaliação.">
+<title>Wallbox: falhas BYD, GWM, Duosida, WEG e Intelbras</title>
+<meta name="description" content="Consulte luzes e códigos de falha de wallbox BYD, GWM, Zhida, Duosida, WEG e Intelbras. Tabelas por modelo, fontes oficiais e orientação para avaliação.">
 <link rel="canonical" href="https://eletronicar.com.br/wallbox-nao-liga/">
-<meta property="og:title" content="Wallbox não carrega? Entenda luzes e falhas por modelo">
+<meta property="og:title" content="Wallbox: luzes e códigos de falha por modelo">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#0b1f2a">
@@ -92,7 +92,7 @@ footer p{margin:0;max-width:620px}
  .charger{display:none}.grid3,.steps{grid-template-columns:1fr}.nav a:not(.btn){display:none}
  section{padding:56px 0}.cta{padding:40px 22px}
 }
-.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:#fff}table{width:100%;border-collapse:collapse;min-width:300px;text-align:left}caption{text-align:left;padding:16px;font-weight:700}th,td{padding:14px 16px;border-top:1px solid var(--line);vertical-align:top}th{background:var(--dark);color:#fff}.source{font-size:.9rem;color:var(--muted)}.source a{text-decoration:underline}main nav a{display:inline-block;margin:4px 8px 4px 0;text-underline-offset:3px}.hero time{white-space:nowrap}</style>
+section[id]{scroll-margin-top:80px}.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:#fff}table{width:100%;border-collapse:collapse;min-width:300px;text-align:left}caption{text-align:left;padding:16px;font-weight:700}th,td{padding:14px 16px;border-top:1px solid var(--line);vertical-align:top}th{background:var(--dark);color:#fff}.source{font-size:.9rem;color:var(--muted)}.source a{text-decoration:underline}main nav a{display:inline-block;margin:4px 8px 4px 0;text-underline-offset:3px}.hero time{white-space:nowrap}</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -119,7 +119,7 @@ footer p{margin:0;max-width:620px}
  <h2>Comece pela etiqueta e pelo sintoma</h2>
  <p>Fotografe a etiqueta para identificar fabricante e modelo. Grave cerca de 15 segundos do indicador, mostrando a cor, o ritmo das piscadas e se o carro está conectado. Anote também quando o problema começou. Esse registro ajuda a escolher o manual correto e orientar a avaliação.</p>
  <p><strong>Não abra o wallbox, não toque nos contatos nem faça medições na rede.</strong> Se houver cheiro de queimado, dano no cabo, água no equipamento ou desarme repetido da proteção, interrompa o uso e procure um profissional. Não faça pontes nem desative proteções.</p>
- <nav aria-label="Conteúdo do guia"><a href="#byd">Luzes BYD</a> · <a href="#weg">Luzes WEG</a> · <a href="#duvidas">Dúvidas frequentes</a> · <a href="#avaliacao">Solicitar avaliação</a></nav>
+ <nav aria-label="Conteúdo do guia"><a href="#byd">Luzes BYD</a> · <a href="#weg">Luzes WEG</a> · <a href="#gwm-zhida">GWM e Zhida</a> · <a href="#duosida">Códigos Duosida</a> · <a href="#intelbras">Intelbras Home</a> · <a href="#duvidas">Dúvidas frequentes</a> · <a href="#avaliacao">Solicitar avaliação</a></nav>
 </div></section>
 
 <section class="alt" id="byd"><div class="wrap">
@@ -159,6 +159,30 @@ footer p{margin:0;max-width:620px}
  <p class="source">Fonte: <a href="https://static.weg.net/medias/downloadcenter/hbf/h6b/WEG_WEMOB_10013034976_wall-instalation-guide-internet.pdf#page=6">WEG · Guia Rápido de Instalação WEMOB WALL, documento 10013034976</a>, página PDF 6, §§6.1–6.3. Edição disponível em 19/11/2026; confira a documentação entregue com o aparelho.</p>
 </div></section>
 
+<section class="alt" id="gwm-zhida"><div class="wrap">
+<h2>GWM / Zeeda Série G e Zhida: contagem da luz vermelha</h2>
+<p>Escopo: GWM/Zeeda <strong>ZDA4-DC1-C12E e ZDA4-DC1-C11E</strong> do manual Série G; Zhida Guardian <strong>ZDA4-DC1-C12E</strong> do manual distribuído pela BYD Energia. Confira o documento da sua unidade: nome comercial ou código semelhante não garante revisão idêntica.</p>
+<p>Os números abaixo são a <strong>quantidade de piscadas do aviso vermelho</strong>, não segundos entre piscadas. Observe a sequência e registre um vídeo.</p>
+<div class="table-scroll" role="region" aria-label="Resumo comparativo dos avisos vermelhos" tabindex="0"><table><caption>Resumo comparativo dos avisos vermelhos</caption><thead><tr><th scope="col">GWM: piscadas</th><th scope="col">Zhida: piscadas</th><th scope="col">Indicação descrita</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>Detecção de corrente de fuga.</td></tr><tr><td>2</td><td>2</td><td>Anormalidade de comunicação pelo sinal CP.</td></tr><tr><td>3</td><td>3</td><td>Tensão acima da faixa permitida.</td></tr><tr><td>4</td><td>4</td><td>Tensão abaixo da faixa permitida.</td></tr><tr><td>5</td><td>5</td><td>Corrente acima do limite.</td></tr><tr><td>6</td><td>Não listado</td><td>Problema detectado no aterramento, segundo o manual GWM.</td></tr><tr><td>7</td><td>7</td><td>Parada de emergência acionada.</td></tr><tr><td>8</td><td>8</td><td>Indicação de curto no circuito.</td></tr><tr><td>9</td><td>9</td><td>Temperatura acima do limite.</td></tr><tr><td>10</td><td>10</td><td>Anormalidade na leitura de temperatura.</td></tr><tr><td>11</td><td>11</td><td>Problema identificado na medição de energia.</td></tr><tr><td>12</td><td>12</td><td>Teste interno da proteção de fuga não aprovado.</td></tr><tr><td>13</td><td>13</td><td>Indicação de contato do relé soldado/travado.</td></tr></tbody></table></div>
+<p>O código 6 aparece no documento GWM, mas não está listado no manual Zhida consultado. Não atribua uma causa por comparação com outra versão.</p>
+<p class="source">Fontes: <a href="https://www.gwmmotors.com.br/content/dam/gwm/pages/br/pt/service/manuais/manuais/manual-carregador-gwm-modelo-g-series.pdf#page=31">GWM — Manual Série G</a>, p. impressa 29 (PDF 31); <a href="https://bydenergia.com/wp-content/uploads/2026/08/Manual_Carregador_Zhida.pdf#page=10">Zhida — Manual do Usuário</a>, p. impressa 8 (PDF 10). Arquivos oficiais consultados em 19/11/2026; revisão não claramente identificada.</p>
+<p>Fotografe a etiqueta e registre o aviso antes de pedir avaliação. Um código aponta a condição detectada, não prova a peça defeituosa.</p>
+</div></section>
+<section id="duosida"><div class="wrap">
+<h2>Duosida SES-32: códigos de falha na tela</h2>
+<p>Escopo: <strong>SES-32 (DeLuxe)</strong> do manual de carregador CA fornecido pela BYD Energia, edição de 13/02/2023. Copie o código completo, incluindo zeros; outros Duosida podem ter códigos diferentes.</p>
+<div class="table-scroll" role="region" aria-label="Códigos do display e significado resumido" tabindex="0"><table><caption>Códigos do display e significado resumido</caption><thead><tr><th scope="col">Código</th><th scope="col">Indicação descrita</th></tr></thead><tbody><tr><td>0x00010001</td><td>Parada de emergência ativa.</td></tr><tr><td>0x00010003</td><td>Corrente acima do limite.</td></tr><tr><td>0x00010004</td><td>Tensão excessiva na alimentação.</td></tr><tr><td>0x00020001</td><td>Problema indicado no conjunto da tela LCD.</td></tr><tr><td>0x00020003</td><td>Anormalidade no leitor de cartões RFID.</td></tr><tr><td>0x00020004</td><td>Anormalidade no módulo de medição de corrente.</td></tr><tr><td>0x00030005</td><td>Problema na transmissão da comunicação GPRS.</td></tr><tr><td>0x00030010 / 0x00030011</td><td>Anormalidade nos circuitos de detecção ou monitoramento elétrico.</td></tr><tr><td>0x00030020</td><td>Anormalidade geral do relé.</td></tr><tr><td>0x00030021 / 0x00030022</td><td>Relé não abre / não fecha, respectivamente.</td></tr><tr><td>0x00030030</td><td>Anormalidade na proteção interna de fuga.</td></tr><tr><td>0x00030040</td><td>Alimentação da placa principal indicada como anormal.</td></tr></tbody></table></div>
+<p>O manual marca alguns itens como reservados ou sem função, incluindo 0x00010002 e 0x00010005. Esses itens não confirmam uma proteção disponível na sua unidade. A tradução do ritmo das luzes também é ambígua; por isso priorizamos o código da tela.</p>
+<p class="source">Fonte: <a href="https://bydenergia.com/wp-content/uploads/2026/08/Manual_Carregador_DUOSIDA_CA.pdf#page=20">Duosida — Manual de Instruções do Carregador de CA</a>, pp. 20–21 do PDF, tabelas de avarias. Consulta em 19/11/2026.</p>
+<p>Envie uma foto da tela junto com a etiqueta para que a avaliação considere a versão correta.</p>
+</div></section>
+<section class="alt" id="intelbras"><div class="wrap">
+<h2>Intelbras EVE 0074H Home: luzes e sintomas</h2>
+<p>Referências: manual <strong>01/26, full range 100–240 V</strong>, e manual <strong>02/23, versão 220 V</strong>. As tabelas de estados coincidem, mas a alimentação difere. Identifique sua versão na etiqueta.</p>
+<div class="table-scroll" role="region" aria-label="Estados do LED frontal EVE 0074H" tabindex="0"><table><caption>Estados do LED frontal EVE 0074H</caption><thead><tr><th scope="col">Sinal observado</th><th scope="col">Estado descrito</th></tr></thead><tbody><tr><td>Verde: acende 1 s e apaga 3 s</td><td>Ligado, em espera, sem veículo conectado.</td></tr><tr><td>Amarelo: acende 1 s e apaga 1 s</td><td>Conectado ao veículo, preparado para iniciar.</td></tr><tr><td>Amarelo: acende 0,5 s e apaga 0,5 s</td><td>Leitura do cartão autorizada.</td></tr><tr><td>Verde: acende 1 s e apaga 1 s</td><td>Recarga em andamento.</td></tr><tr><td>Vermelho fixo ou piscando</td><td>Condição de erro; conferir sintomas abaixo.</td></tr></tbody></table></div><div class="table-scroll" role="region" aria-label="Sintomas abordados nas dúvidas frequentes" tabindex="0"><table><caption>Sintomas abordados nas dúvidas frequentes</caption><thead><tr><th scope="col">Sintoma</th><th scope="col">O que o manual aponta</th></tr></thead><tbody><tr><td>LED frontal apagado</td><td>Alimentação e tensão da versão precisam ser verificadas por profissional.</td></tr><tr><td>Vermelho no painel</td><td>O FAQ orienta verificar se a parada de emergência foi acionada.</td></tr><tr><td>Não inicia, ou inicia e para</td><td>Conferir modo RFID/Plug&amp;Play, limite de carga e programação do veículo.</td></tr><tr><td>Vermelho piscando</td><td>O FAQ cita anormalidade da rede ou possível fuga; não determina uma causa única.</td></tr></tbody></table></div>
+<p>O manual não fornece uma correspondência entre número de piscadas vermelhas e peça defeituosa. Não aplique os números do GWM a este modelo.</p>
+<p class="source">Fontes Intelbras: <a href="https://backend.intelbras.com/sites/default/files/2026-10/Manual_EVE_0074H_01-26_site_0.pdf#page=7">Manual EVE 0074H 01/26</a> e <a href="https://backend.intelbras.com/sites/default/files/2023-07/Manual_EVE_0074H_02-23.pdf#page=7">Manual EVE 0074H 02/23</a>, §2.2, p. 7, e dúvidas frequentes, p. 17. Consulta em 19/11/2026.</p>
+</div></section>
 <section class="alt" id="duvidas"><div class="wrap faq">
  <h2>Dúvidas antes de pedir o conserto</h2>
  <details><summary>Luz vermelha significa placa queimada?</summary><p>Não. É uma sinalização que precisa ser interpretada pelo manual do modelo. O diagnóstico deve distinguir instalação elétrica, comunicação com o veículo, cabo e defeito interno antes de indicar uma peça.</p></details>
