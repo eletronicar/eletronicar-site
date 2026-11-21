@@ -48,6 +48,7 @@ section{padding:76px 0}
 section.alt{background:var(--soft)}
 h2{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.02em;margin:0 0 10px;line-height:1.2}
 .sub{color:var(--muted);margin:0 0 40px;max-width:640px;font-size:1.05rem}
+.aviso{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:#f0fdf4;border:2px solid var(--green);border-left-width:8px;border-radius:14px;padding:18px 22px;margin:0 0 28px}.aviso b{display:block;font-size:1.1rem;margin-bottom:4px}.aviso span{color:var(--ink)}.aviso .btn{white-space:nowrap}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;transition:box-shadow .2s,transform .2s}
 .card:hover{box-shadow:0 12px 30px rgba(15,23,42,.08);transform:translateY(-2px)}
@@ -139,7 +140,7 @@ footer p{margin:0;max-width:620px}
 
 <section id="defeitos"><div class="wrap">
  <h2>Conserto e serviços para wallbox</h2>
- <p class="sub">Antes de trazer, veja as <a href="/wallbox-nao-liga/">tabelas de luzes e códigos de falha BYD, GWM/Zeeda/Zhida, Duosida, WEG e Intelbras</a>.</p>
+ <div class="aviso"><div><b>Seu wallbox está com luz piscando ou código de erro?</b><span>Antes de trazer, consulte as tabelas de luzes e códigos de falha BYD, GWM/Zeeda/Zhida, Duosida, WEG e Intelbras.</span></div><a class="btn sm" href="/wallbox-nao-liga/">Ver tabelas de códigos de falha</a></div>
  <p class="sub">Os problemas mais comuns em wallbox AC residencial. Se o seu não está na lista, mande uma mensagem: avaliamos pelo WhatsApp.</p>
  <div class="grid3">
   <div class="card" id="cartao"><div class="ico"><svg><use href="#ok"/></svg></div><h3>Perdeu o cartão do wallbox?</h3><p>Reconfiguramos o acesso do seu wallbox para carregar sem o cartão RFID, em modelos compatíveis e somente a pedido do proprietário, após avaliação na bancada. Envie uma foto da etiqueta pelo WhatsApp.</p></div>
